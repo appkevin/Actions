@@ -1,5 +1,10 @@
 language: c
 
+addons:
+  apt:
+    packages:
+    - graphviz
+
 before_install:
   - wget http://downloads.sourceforge.net/project/cunit/CUnit/2.1-2/CUnit-2.1-2-src.tar.bz2
   - tar -xvjpf CUnit-2.1-2-src.tar.bz2
