@@ -13,8 +13,9 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - uses: actions/checkout@v2
-
+    - uses: actions/checkout@v1
+    - name: configure
+      run: ./configure
     - name: make
       run: make
     - name: make check
