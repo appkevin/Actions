@@ -1,0 +1,12 @@
+
+output: Rechner.o Rechnung.o
+	g++ Rechner.o Rechung.o -o output
+
+Rechner.o: Rechner.c
+	g++ -c Rechner.c
+
+Rechnung.o: Rechnung.h
+	g++ -c Rechnung.h
+
+clean:
+	rm *.o output
